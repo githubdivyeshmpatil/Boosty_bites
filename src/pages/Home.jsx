@@ -9,7 +9,6 @@ import DistributionAvailability from '../Components/DistributionAvailability'
 import FunctionalChocolateSlider from '../Components/FunctionalChocolates'
 import Navbar from '../Components/Navbar'
 import OfferChocolateSection from '../Components/OfferChocolateSection'
-import ScrollToTopButton from '../Components/ScrollToTopButton'
 import WhatsappButton from '../Components/WhatsappButton'
 
 function Home() {
@@ -53,7 +52,6 @@ function Home() {
       </div>
       <div className="fixed bottom-4 right-4 flex flex-col items-center gap-4 z-50">
   <WhatsappButton />
-  <ScrollToTopButton />
 </div>
 
     </>

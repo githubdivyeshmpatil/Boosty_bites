@@ -5,7 +5,6 @@ import Title from '../Components/Title'
 import ChocolateSlider from '../Components/ChocolateSlider'
 import NutraceuticalChocolates from '../Components/NutraceuticalChocolates'
 import FunctionalChocolateSlider from '../Components/FunctionalChocolates'
-import ScrollToTopButton from '../Components/ScrollToTopButton'
 import WhatsappButton from '../Components/WhatsappButton'
 
 function Chocolates() {
@@ -21,7 +20,6 @@ function Chocolates() {
       </BackgroundSection>
              <div className="fixed bottom-4 right-4 flex flex-col items-center gap-4 z-50">
   <WhatsappButton />
-  <ScrollToTopButton />
 </div>
 
    </>

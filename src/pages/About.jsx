@@ -1,6 +1,5 @@
 import React, { useEffect, lazy, Suspense } from 'react';
 import aboutbg from '../assets/images/boostybites_choco_blue.png';
-import ScrollToTopButton from '../Components/ScrollToTopButton';
 import WhatsappButton from '../Components/WhatsappButton';
 
 const AboutCompany = lazy(() => import('../Components/AboutCompany'));
@@ -32,7 +31,6 @@ function About() {
       </Suspense>
             <div className="fixed bottom-4 right-4 flex flex-col items-center gap-4 z-50">        
   <WhatsappButton />
-  <ScrollToTopButton />
 </div>
 
     </>

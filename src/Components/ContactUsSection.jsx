@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import WhatsappButton from "./WhatsappButton";
-import ScrollToTopButton from "./ScrollToTopButton";
 
 function ContactUsSection() {
   useEffect(() => {
@@ -109,7 +108,6 @@ function ContactUsSection() {
          
  <div className="fixed bottom-4 right-4 flex flex-col items-center gap-4 z-50">
   <WhatsappButton />
-  <ScrollToTopButton />
 </div>
     </>
   );
