@@ -21,6 +21,7 @@ function App() {
 
   return (
     <>
+    
       <Router>
         <Navbar />
         <div className="pt-20">
