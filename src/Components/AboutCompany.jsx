@@ -8,7 +8,7 @@ const AboutCompany = () => {
       {/* Text Content */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold italic font-[cursive] text-black mb-6">
-          About Usuuuuuuu
+          About Us
         </h2>
 
         <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed text-justify mb-4">
