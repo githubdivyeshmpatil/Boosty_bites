@@ -1,5 +1,5 @@
 import React from "react";
-import chocolateImage from "../assets/images/chocob.png"; // make sure this path is correct
+import chocolateImage from "../assets/images/post1.png"; // make sure this path is correct
 
 function ChocolateVisionSection() {
   return (

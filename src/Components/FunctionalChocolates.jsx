@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import img1 from "../assets/images/footerbg1.png"; // Replace with your actual images
-import img2 from "../assets/images/footerbg1.png";
-import img3 from "../assets/images/footerbg1.png";
+import img1 from "../assets/images/square.png"; // Replace with your actual images
+import img2 from "../assets/images/square.png";
+import img3 from "../assets/images/square.png";
 
 // Functional Chocolate Data
 const chocolates = [
@@ -83,9 +83,9 @@ function FunctionalChocolateSlider() {
                     width: window.innerWidth < 768 ? "100%" : `${cardWidth}px`
                   }}
                 >
-                  <div className="h-full bg-white border rounded-md shadow-md overflow-hidden group relative flex flex-col">
+                  <div className="h-full bg-[#e9e9e9] border rounded-md shadow-md overflow-hidden group relative flex flex-col">
                     {/* Image */}
-                    <div className="h-[300px] p-4 flex items-center justify-center">
+                    <div className="h-[360px] p-4 flex items-center justify-center">
                       <img
                         src={item.image}
                         alt={`chocolate-${idx}`}
