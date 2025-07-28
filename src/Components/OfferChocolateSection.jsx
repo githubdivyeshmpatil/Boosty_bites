@@ -1,5 +1,5 @@
 import React from 'react';
-import chocolateImage from '../assets/images/boul3.png'; // correct image path
+import chocolateImage from '../assets/images/cover.png'; // correct image path
 
 const OfferChocolateSection = () => {
   return (

@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import img1 from "../assets/images/vitamina.jpg";
-import img2 from "../assets/images/footerbg1.png";
-import img3 from "../assets/images/footerbg1.png";
-import img4 from "../assets/images/footerbg1.png"; // Reuse or update images as needed
+import img1 from "../assets/images/kids1.png";
+import img2 from "../assets/images/kids2.png";
+import img3 from "../assets/images/kids1.png";
+import img4 from "../assets/images/kids2.png"; // Reuse or update images as needed
 
 const chocolates = [
   {
@@ -32,14 +32,14 @@ function NutraceuticalChocolates() {
   const [index, setIndex] = useState(0);
   const containerRef = useRef(null);
   const cardMargin = 16;
-  const visibleCount = 3;
-  const [cardWidth, setCardWidth] = useState(400);
+  const visibleCount = 4; // Updated to show 4 cards
+  const [cardWidth, setCardWidth] = useState(300); // Initial fallback width
 
   useEffect(() => {
     const handleResize = () => {
       if (containerRef.current && window.innerWidth >= 768) {
         const containerWidth = containerRef.current.offsetWidth;
-        const width = (containerWidth - visibleCount * cardMargin) / visibleCount;
+        const width = (containerWidth - (visibleCount - 1) * cardMargin) / visibleCount;
         setCardWidth(width);
       }
     };
@@ -63,9 +63,6 @@ function NutraceuticalChocolates() {
 
   return (
     <div className="w-full flex flex-col items-center justify-center py-10 bg-white overflow-hidden">
-      {/* Section Title */}
-     
-
       {/* Slider Container */}
       <div
         ref={containerRef}
@@ -86,21 +83,20 @@ function NutraceuticalChocolates() {
                 width: window.innerWidth < 768 ? "100%" : `${cardWidth}px`
               }}
             >
-              <div className="h-full bg-white border rounded-md shadow-md overflow-hidden group relative flex flex-col">
+              <div className="h-full bg-[#e9e9e9] border rounded-md shadow-md overflow-hidden group relative flex flex-col">
                 {/* Image */}
-                <div className="h-[300px] p-4 flex items-center justify-center">
+                <div className="h-[360px] p-0 flex items-center justify-center overflow-hidden">
                   <img
                     src={item.image}
                     alt={`chocolate-${idx}`}
-                    className="object-contain w-full h-full"
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
                 {/* Hover Info */}
                 <div className="h-[100px] relative">
                   <div className="absolute bottom-0 left-0 w-full bg-[#421c00] text-white text-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="font-bold  ">{item.name}</h3>
-                    <p className="text-xs italic">{item.description}</p>
+                    <h3 className="font-bold">{item.name}</h3>
                     <p className="mt-1 text-sm tracking-wider">BUY NOW</p>
                   </div>
                 </div>
@@ -112,21 +108,21 @@ function NutraceuticalChocolates() {
 
       {/* Navigation Buttons */}
       <div className="hidden md:flex items-center gap-6 mt-6">
-          <button
-           onClick={prev}
-           className="w-24 h-12 flex items-center justify-center bg-[#4a1c08]   p-4 shadow  disabled:opacity-50"
-           disabled={index === 0}
-         >
-           <FaArrowLeft className="text-white text-xl" />
-         </button>
-         
-         <button
-           onClick={next}
-           className="w-24 h-12 flex items-center justify-center bg-[#4a1c08]  p-4 shadow  disabled:opacity-50"
-           disabled={index + visibleCount >= chocolates.length}
-         >
-           <FaArrowRight className="text-white text-xl" />
-         </button>
+        <button
+          onClick={prev}
+          className="w-24 h-12 flex items-center justify-center bg-[#4a1c08] p-4 shadow disabled:opacity-50"
+          disabled={index === 0}
+        >
+          <FaArrowLeft className="text-white text-xl" />
+        </button>
+
+        <button
+          onClick={next}
+          className="w-24 h-12 flex items-center justify-center bg-[#4a1c08] p-4 shadow disabled:opacity-50"
+          disabled={index + visibleCount >= chocolates.length}
+        >
+          <FaArrowRight className="text-white text-xl" />
+        </button>
       </div>
     </div>
   );

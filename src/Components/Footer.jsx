@@ -101,7 +101,7 @@ export default function Footer() {
               {/* 🌐 Website */}
               <div>
                 <span className="inline-block font-medium">🌐 Website:</span>
-                <div className="ml-6">www.boostybites.com</div>
+                <div className="ml-6">www.boostybites.in</div>
               </div>
             </div>
           </div>

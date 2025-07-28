@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Search, User } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom'; // ✅ Import useLocation
-import logo from '../assets/images/boosty.png';
+import logo from '../assets/images/Logo1.png';
 import PromoModal from './PromoModal';
 
 const Navbar = () => {
@@ -21,9 +21,14 @@ const Navbar = () => {
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50 font-inter">
       <div className="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
         {/* ✅ Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Boosty bites" className="h-16 w-auto" />
-        </Link>
+  <Link to="/" className="flex items-center gap-2">
+  <img
+    src={logo}
+    alt="Boosty bites"
+    className="h-18 w-auto object-contain"
+  />
+</Link>
+
 
         {/* ✅ Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10">
