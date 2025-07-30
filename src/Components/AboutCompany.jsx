@@ -1,5 +1,5 @@
 import React from "react";
-import chocolateImg from "../assets/images/cover.png"; // Replace with your actual image path
+import chocolateImg from "../assets/images/low.png"; // Replace with your actual image path
 
 const AboutCompany = () => {
   return (

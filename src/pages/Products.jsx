@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import aboutbg4 from '../assets/images/chocolatebg.jpg'
+import aboutbg4 from '../assets/images/Productpage.png'
 import BackgroundSection from '../Components/BackgroundSection'
 import ChocolateSlider from '../Components/ChocolateSlider'
 import Title from '../Components/Title'
@@ -13,11 +13,13 @@ function Products() {
   }, []);
   return (
     <>
-     <BackgroundSection
-        imageUrl={aboutbg4}
-        className="h-[500px] p-10"
-      >
-      </BackgroundSection>
+    <BackgroundSection
+  imageUrl={aboutbg4}
+  className="w-full min-h-screen bg-no-repeat bg-top bg-contain p-5 flex items-start justify-center"
+>
+  {/* Your content here */}
+</BackgroundSection>
+
        <div className="mt-6 md:mt-10 lg:mt-16 ">
           <Title
             text="Our chocolate products"

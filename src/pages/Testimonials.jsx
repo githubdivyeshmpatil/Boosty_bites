@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 import imageBoxBg from "../assets/images/slider-bg1.png";
 import BackgroundSection from "../Components/BackgroundSection";
-import aboutbg3 from '../assets/images/te2.jpg';
+import aboutbg3 from '../assets/images/Nu.png';
 
 const testimonials = [
   {
@@ -109,7 +109,7 @@ const Testimonials = () => {
     <>
       <BackgroundSection
         imageUrl={aboutbg3}
-        className="h-[500px] p-10"
+  className="w-full min-h-screen bg-no-repeat bg-top bg-contain p-5 flex items-start justify-center"
       ></BackgroundSection>
 
       <div className="w-full flex flex-col items-center justify-center py-10 bg-white overflow-hidden">
