@@ -89,7 +89,7 @@ export default function Footer() {
               {/* 📞 Phone */}
               <div>
                 <span className="inline-block font-medium">📞 Phone:</span>
-                <div className="ml-6">+91-9876543210</div>
+                <div className="ml-6">+91-</div>
               </div>
 
               {/* 📧 Email */}
