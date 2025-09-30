@@ -1,16 +1,16 @@
-import React from 'react'
-import { Helmet } from 'react-helmet-async'
-import ChocolateBanner from '../Components/ChocolateBanner'
-import AboutCompany from '../Components/AboutCompany'
-import Title from '../Components/Title'
-import ChocolateVisionSection from '../Components/ChocolateVisionSection'
-import ChocolateSlider from '../Components/ChocolateSlider'
-import NutraceuticalChocolates from '../Components/NutraceuticalChocolates'
-import DistributionAvailability from '../Components/DistributionAvailability'
-import FunctionalChocolateSlider from '../Components/FunctionalChocolates'
-import Navbar from '../Components/Navbar'
-import OfferChocolateSection from '../Components/OfferChocolateSection'
-import WhatsappButton from '../Components/WhatsappButton'
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import ChocolateBanner from "../Components/ChocolateBanner";
+import AboutCompany from "../Components/AboutCompany";
+import Title from "../Components/Title";
+import ChocolateVisionSection from "../Components/ChocolateVisionSection";
+import ChocolateSlider from "../Components/ChocolateSlider";
+import NutraceuticalChocolates from "../Components/NutraceuticalChocolates";
+import DistributionAvailability from "../Components/DistributionAvailability";
+import FunctionalChocolateSlider from "../Components/FunctionalChocolates";
+import Navbar from "../Components/Navbar";
+import OfferChocolateSection from "../Components/OfferChocolateSection";
+import WhatsappButton from "../Components/WhatsappButton";
 
 function Home() {
   return (
@@ -26,21 +26,33 @@ function Home() {
           name="keywords"
           content="Boosty Bites, chocolate, handmade chocolate, functional chocolate, nutraceutical chocolate"
         />
-        <meta property="og:title" content="Boosty Bites - Handmade & Functional Chocolates" />
+        <meta
+          property="og:title"
+          content="Boosty Bites - Handmade & Functional Chocolates"
+        />
         <meta
           property="og:description"
           content="Discover our range of handmade chocolates for kids and adults. Health-conscious and delicious."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.boostybites.in/" />
-        <meta property="og:image" content="https://www.boostybites.in/og-image.jpg" />
+        <meta
+          property="og:image"
+          content="https://www.boostybites.in/og-image.jpg"
+        />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Boosty Bites - Handmade & Functional Chocolates" />
+        <meta
+          name="twitter:title"
+          content="Boosty Bites - Handmade & Functional Chocolates"
+        />
         <meta
           name="twitter:description"
           content="Discover our range of handmade chocolates for kids and adults. Health-conscious and delicious."
         />
-        <meta name="twitter:image" content="https://www.boostybites.in/og-image.jpg" />
+        <meta
+          name="twitter:image"
+          content="https://www.boostybites.in/og-image.jpg"
+        />
 
         {/* Google Site Verification */}
         <meta
@@ -89,7 +101,7 @@ function Home() {
         <WhatsappButton />
       </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
