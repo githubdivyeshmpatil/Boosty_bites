@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import ChocolateBanner from '../Components/ChocolateBanner'
 import AboutCompany from '../Components/AboutCompany'
 import Title from '../Components/Title'
@@ -14,7 +15,40 @@ import WhatsappButton from '../Components/WhatsappButton'
 function Home() {
   return (
     <>
-      {/* Wrapper with responsive container and overflow-x-hidden */}
+      {/* SEO for Home Page */}
+      <Helmet>
+        <title>Boosty Bites - Handmade & Functional Chocolates</title>
+        <meta
+          name="description"
+          content="Boosty Bites offers premium handmade chocolates with functional benefits. Smooth, rich, and irresistible, made with natural ingredients."
+        />
+        <meta
+          name="keywords"
+          content="Boosty Bites, chocolate, handmade chocolate, functional chocolate, nutraceutical chocolate"
+        />
+        <meta property="og:title" content="Boosty Bites - Handmade & Functional Chocolates" />
+        <meta
+          property="og:description"
+          content="Discover our range of handmade chocolates for kids and adults. Health-conscious and delicious."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.boostybites.in/" />
+        <meta property="og:image" content="https://www.boostybites.in/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Boosty Bites - Handmade & Functional Chocolates" />
+        <meta
+          name="twitter:description"
+          content="Discover our range of handmade chocolates for kids and adults. Health-conscious and delicious."
+        />
+        <meta name="twitter:image" content="https://www.boostybites.in/og-image.jpg" />
+
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="9pY4SsV8IoN3nPaD8KWymNHLekxlNtOH-cBpX3SqjIY"
+        />
+      </Helmet>
+
       <div className="w-full overflow-x-hidden">
         <Navbar />
         <ChocolateBanner />
@@ -50,10 +84,10 @@ function Home() {
         <DistributionAvailability />
         <OfferChocolateSection />
       </div>
-      <div className="fixed bottom-4 right-4 flex flex-col items-center gap-4 z-50">
-  <WhatsappButton />
-</div>
 
+      <div className="fixed bottom-4 right-4 flex flex-col items-center gap-4 z-50">
+        <WhatsappButton />
+      </div>
     </>
   )
 }

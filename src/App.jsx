@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
-
 import Footer from "./Components/Footer";
-
 import ContactUsSection from "./Components/ContactUsSection";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+
+// Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Terms from "./pages/Terms";
@@ -20,49 +21,27 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-    
+    <HelmetProvider>
       <Router>
         <Navbar />
         <div className="pt-20">
-          {" "}
-          {/* Fixed navbar ke liye padding */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact_us" element={<ContactUsSection />} />
             <Route path="/about_us" element={<About />} />
             <Route path="/chocolates" element={<Chocolates />} />
             <Route path="/products" element={<Products />} />
-
             <Route path="/terms&condition" element={<Terms />} />
             <Route path="/testimonial" element={<Testimonials />} />
-                        <Route path="/returnpolicy" element={<ReturnPolicy />} />
-                                                <Route path="/shippingpolicy" element={<ShippingPolicy />} />
-                                                <Route path="/faq" element={<FAQ />} />
-
-
+            <Route path="/returnpolicy" element={<ReturnPolicy />} />
+            <Route path="/shippingpolicy" element={<ShippingPolicy />} />
+            <Route path="/faq" element={<FAQ />} />
           </Routes>
-           <Footer />
+          <Footer />
         </div>
       </Router>
-     
-      
-    </>
+    </HelmetProvider>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-// h1	text-3xl sm:text-4xl md:text-5xl lg:text-6xl
-// h2	text-2xl sm:text-3xl md:text-4xl lg:text-5xl
-// h3 → text-lg sm:text-xl md:text-2xl lg:text-3xl
-// h4 "text-base sm:text-lg md:text-xl lg:text-2xl font-medium
-
-// p	text-base sm:text-lg md:text-xl text-justify
-// p1 "text-sm sm:text-base md:text-lg text-justify
