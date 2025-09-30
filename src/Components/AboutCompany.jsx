@@ -1,5 +1,6 @@
 import React from "react";
 import chocolateImg from "../assets/images/low.png"; // Replace with your actual image path
+import { Helmet } from "react-helmet-async";
 
 const AboutCompany = () => {
   return (
