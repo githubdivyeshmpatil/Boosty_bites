@@ -1,12 +1,11 @@
 import React from "react";
 import chocolateImg from "../assets/images/low.png"; // Replace with your actual image path
-import { Helmet } from "react-helmet-async";
 
 const AboutCompany = () => {
   return (
     <section className="w-full bg-white px-4 sm:px-6 md:px-10 lg:px-16 py-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
        <Helmet>
-              <title> About Boosty Bites</title>
+              <title>Boosty Bites about</title>
               <meta
                 name="description"
                 content="Boosty Bites offers premium handmade chocolates with functional benefits. Smooth, rich, and irresistible, made with natural ingredients."
