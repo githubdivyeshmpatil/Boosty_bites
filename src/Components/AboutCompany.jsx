@@ -1,9 +1,42 @@
 import React from "react";
 import chocolateImg from "../assets/images/low.png"; // Replace with your actual image path
+import { Helmet } from "react-helmet-async";
 
 const AboutCompany = () => {
   return (
     <section className="w-full bg-white px-4 sm:px-6 md:px-10 lg:px-16 py-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+       <Helmet>
+              <title> About Boosty Bites</title>
+              <meta
+                name="description"
+                content="Boosty Bites offers premium handmade chocolates with functional benefits. Smooth, rich, and irresistible, made with natural ingredients."
+              />
+              <meta
+                name="keywords"
+                content="Boosty Bites, chocolate, handmade chocolate, functional chocolate, nutraceutical chocolate"
+              />
+              <meta property="og:title" content="Boosty Bites - Handmade & Functional Chocolates" />
+              <meta
+                property="og:description"
+                content="Discover our range of handmade chocolates for kids and adults. Health-conscious and delicious."
+              />
+              <meta property="og:type" content="website" />
+              <meta property="og:url" content="https://www.boostybites.in/" />
+              <meta property="og:image" content="https://www.boostybites.in/og-image.jpg" />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta name="twitter:title" content="Boosty Bites - Handmade & Functional Chocolates" />
+              <meta
+                name="twitter:description"
+                content="Discover our range of handmade chocolates for kids and adults. Health-conscious and delicious."
+              />
+              <meta name="twitter:image" content="https://www.boostybites.in/og-image.jpg" />
+      
+              {/* Google Site Verification */}
+              <meta
+                name="google-site-verification"
+                content="9pY4SsV8IoN3nPaD8KWymNHLekxlNtOH-cBpX3SqjIY"
+              />
+            </Helmet>
       
       {/* Text Content */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
